@@ -19,8 +19,8 @@ CSSLint.addRule({
         ) {
           reporter.report(
             "Properties should be in lowercase: " + part,
-            event.line,
-            event.col,
+            part.line,
+            part.col,
             rule
           );
         }
