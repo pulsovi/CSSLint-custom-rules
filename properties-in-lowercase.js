@@ -13,7 +13,10 @@ CSSLint.addRule({
 
     parser.addListener("property", function(event) {
       event.value.parts.forEach(function(part) {
-        if (part.text != part.text.toLowerCase()) {
+        if (
+          part.text != part.text.toLowerCase() &&
+          event.property.text !== 'font-family'
+        ) {
           reporter.report(
             "Properties should be in lowercase: " + part,
             event.line,
