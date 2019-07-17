@@ -14,7 +14,11 @@ CSSLint.addRule({
 
     parser.addListener("property", function(event) {
       event.value.parts.forEach(function(part) {
-        if (part.type == "color" && part.text.charAt(0) != '#') {
+        if (
+          part.type == "color" &&
+          part.text.charAt(0) != '#' &&
+          part.text.indexOf('rgba')
+        ) {
           reporter.report(
             "Colors should be in hexadecimal notation: " + part,
             event.line,
