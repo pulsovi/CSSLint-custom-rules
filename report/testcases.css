@@ -1,19 +1,35 @@
-.NOUPPERCASECLASS{
-    border: 1px solid red;
+.NOUPPERCASECLASS {
+  border: 1px solid #f00;
 }
-.nouppercaseproperty{
-    BORDER: 1px solid red;
+
+.nouppercaseproperty {
+  BORDER: 1px solid #f00;
 }
-._nounderscore{
-    border: 1px solid red;
+
+
+._nounderscore {
+  border: 1px solid red;
 }
-.colorsinlowercase {
-    background-color: #FF0000;
-    color: #FFFFFF;    
+
+.noshorthandforfont {
+  font: 15px bold arial, helvetica, sans-serif;
+
 }
-.noshorthandforfont{
-    font: 15px bold arial,helvetica,sans-serif;
+
+.noshorthandforlists {
+  list-style: inherit inherit inside;
+
 }
-.noshorthandforlists{
-    list-style : inherit inherit inside;
+
+.properties-in-lowercase {
+  background-color: #FFF;
+  border-color: #fff;
+}
+
+.hex-color {
+  color: #f00;
+  color: rgba(255, 255, 255, 0.5);
+  color: transparent;
+  color: rgb(128, 128, 128);
+  color: blue;
 }
